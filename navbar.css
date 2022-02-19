@@ -1,58 +1,75 @@
-nav {
-  font-family: 'Adamina', serif; /*font-family: 'Adamina', serif;'Lora', serif;*/
+.navbar {
+  border: black solid 2px;
+  background-color: var(--main-color-gray);
+
   display: flex;
-  justify-content: space-around;
-  border-bottom-style: solid;
-  border-bottom: groove 10px #d3b5aefb;
+  justify-content: space-between;
+  align-items: center;
+
+  position: sticky;
+  top: 10px;
 }
 
-nav .brand {
+.navbar .brand {
   display: flex;
   align-items: center;
-  /* flex-grow: 1; */
-  /* justify-self: flex-start;   */
-} 
-
-nav .brand img {
-  margin: 0 5px;
-  padding: 3px;
-  height: 100px;
 }
 
-nav .brand a {
-  color: #7b8988;
+
+.navbar #logo {
+  width: 80px;
+  height: 80px;
+}
+
+
+.navbar #name {
+  color: var(--main-color-light-green);
   text-decoration: none;
-  font-size: 2rem;
-  font-weight: bold;
-  font-family: 'Lora', serif;
+
+  font-size: 2.5rem;
+  font-family: "Lora", sans-serif;
+  /*margin: .5ren;*/
 }
 
-nav .guide {
+.navbar .menulinks ul{
+  margin: 0;
+  padding: 0;
   display: flex;
-  align-items: center;
-  margin: none;
-  padding-inline-start: none;
-  /* flex-grow: 2;   */
-  /* justify-self: flex-end;   */
 }
 
-nav .guide a {
-  /* list-style: none; */
-  color: #323131;
+.navbar .menulinks li {
+  list-style: none;
+}
+
+.navbar .menulinks li a{
   text-decoration: none;
-  font-size: 1.5rem;
-  text-align: center;
+  color: white;
+  padding: 1.55rem;
+  font-size: 1.25rem;
+  font-family: "Adamina", sans-serif;
 
-  padding: 0 5%;
-  border-left: solid 2px black;
-  justify-items: space-between;
+  display: block;
 }
 
-/* nav ul li + nav ul li {
-  border-left: solid 2px black;
-} */
-
-nav .guide a:first-child {
-  border-left: #7b8988;
+.navbar .menulinks li:hover {
+  background-color: #757a7e;
 }
 
+.toggle-button {
+  position: absolute;
+  top: 1.75rem;
+  right: 1rem;  
+  display: flex;
+  /* Hamburger bars are displayed vertically*/
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px; 
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
