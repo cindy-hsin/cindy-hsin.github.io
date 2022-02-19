@@ -55,11 +55,11 @@
   background-color: #757a7e;
 }
 
-.toggle-button {
+#toggle-button {
   position: absolute;
   top: 1.75rem;
   right: 1rem;  
-  display: none; /*flex*/
+  display: none;
   /* Hamburger bars are displayed vertically*/
   flex-direction: column;
   justify-content: space-between;
@@ -67,21 +67,35 @@
   height: 20px; 
 }
 
-.toggle-button .bar {
+#toggle-button .bar {
   height: 3px;
   width: 100%;
   background-color: white;
   border-radius: 10px;
 }
 
+/* Hide the toggle checkbox*/ 
+#toggle-checkbox {
+  display: none;
+}
+
 @media (max-width: 800px) { /* 400px? To be adjusted*/
-  .toggle-button {
+  #toggle-button {
     display: flex;
   }
 
   .navbar .menulinks{
-    /* display: none; */
+    display: none;
     width: 100%;
+  }
+
+  #toggle-button:hover {
+    cursor: pointer;
+  }
+
+  /* Show menulinks when the checkbox is checked*/
+  #toggle-checkbox:checked ~ .menulinks {
+    display: block ;
   }
 
   .navbar {
@@ -103,5 +117,5 @@
   }
 
 
-  
+
 }
