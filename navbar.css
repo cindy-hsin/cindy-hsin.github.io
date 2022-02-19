@@ -1,0 +1,23 @@
+nav {
+  font-family: 'Lora', serif; /*font-family: 'Adamina', serif;'Lora', serif;*/
+  display: flex;
+}
+
+
+nav .brand {
+  display: flex;
+  
+  
+} 
+
+nav .brand img {
+  height: 100px;
+  margin: 0 5px;
+}
+
+nav .brand a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+}
