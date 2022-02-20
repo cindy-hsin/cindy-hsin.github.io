@@ -1,11 +1,6 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Adamina&family=Lora:ital@1&display=swap'); */
 
 * {
-  /* --main-color-orange: #EDC787;
-  --main-color-avory: #EEE2DC;
-  --main-color-gray: #BAB2B5;
-  --main-color-blue: #123C69;
-  --main-color-ruby: #AC3B61; */
   box-sizing: border-box;
 
   --main-color-gray: #5F6366;
@@ -23,6 +18,20 @@ body {
 }
 
 
+
+  /* To render Google fonts*/
+body {
+  -webkit-animation-delay: 0.1s;
+  -webkit-animation-name: fontfix;
+  -webkit-animation-duration: 0.1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes fontfix {
+  from { opacity: 1; }
+  to   { opacity: 1; }
+}
 
 
 
