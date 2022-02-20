@@ -7,8 +7,7 @@
   --main-color-dark-blue: #4D6D9A;
   --main-color-light-blue: #86B3D1;
   --main-color-light-green: #99CED3;
-  --main-color-pink: #EDB5BF;
-  
+  --main-color-pink: #EDB5BF;  
 }
 
 body {
@@ -16,8 +15,6 @@ body {
   padding: 0;
   border: black solid 5px;
 }
-
-
 
   /* To render Google fonts*/
 body {
