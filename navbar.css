@@ -28,7 +28,7 @@
 
   font-size: 2.5rem;
   font-family: "Lora", sans-serif;
-  /*margin: .5ren;*/
+  padding: 0 1rem;
 }
 
 .navbar .menulinks ul{
