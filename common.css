@@ -4,10 +4,10 @@
   box-sizing: border-box;
 
   --main-color-gray: #6e7376;
-  --main-color-dark-blue: #4d6e9b;/*#3a5692;*/
-  --main-color-light-blue: #729dbf;
+  --main-color-dark-blue:rgba(76, 107, 154, 0.8) /*#4d6e9b*/;/*#3a5692;*/
+  --main-color-light-blue: rgb(204 204 255);/*rgb(114, 157, 191, 70%);*/
   --main-color-light-green: #99CED2;
-  --main-color-pink: #e8b2bd;  
+  --main-color-pink: rgb(240, 128, 128, 0.6) /*#e8b2bd; */
 }
 
 body {

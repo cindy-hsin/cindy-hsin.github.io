@@ -1,12 +1,12 @@
 .main-grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 
   grid-template-areas: 
     "about about"
     "education work";
     gap: 10px 20px;
-  color: white;
+  /* color: rgb(255, 255, 255); */
+  color: darkslategray;
   font-family: "Adamina", sans-serif;
 }
 
@@ -40,10 +40,11 @@
 
 .education {
   grid-area: education;
-  background-color: lightgray;
+  /* background-color: lightgray; */
+  /* background-color: rgb(240, 128, 128, 0.6); */
+  background-color: var(--main-color-pink);
   padding: 0 15px;
   z-index: 0;
-  color: white;
   border-radius: 50px;
   min-height: 500px;
 }
@@ -55,11 +56,11 @@
 
 .school-block {
   z-index: 1;
-  background-color: var(--main-color-dark-blue);
-  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+  /* background-color: var(--main-color-dark-blue); */
+  box-shadow: inset 5px 5px 8px 1px rgb(150, 60, 102);/* rgba(0, 0, 255, .2);*/
   /* border-bottom: var(--main-color-pink) solid 2px; */
   margin-top: 25px;
-  padding: 0 10px;
+  padding: 0 5px 0 20px;
   border-radius: 15px;
 }
 
@@ -69,6 +70,7 @@
 
 .school-block:last-child {
   padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .school-title, .work-title{
@@ -79,13 +81,15 @@
 
 .school-title .header {
   margin: 0.5em 0;
+  text-decoration: underline solid rgba(0, 0, 255, 0.7) 3px; /*var(--main-color-light-green)*/
 }
 
 .school-title .location, 
 .school-title .date,
 .work-title .location,
 .work-title .date {
-  font-size: 0.8em;
+  font-size: 0.85em;
+  font-style: italic;
   padding: 2%;
 }
 /* .gap {
@@ -120,5 +124,12 @@
 
 .work-block {
 
-  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+  box-shadow: inset 15px 0px 0px 0px rgba(0, 0, 255, .2);
 }
+
+
+/*To add::after
+Gap between AboutMe,Education, Work
+Background color of Education
+
+*/
