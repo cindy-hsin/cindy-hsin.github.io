@@ -3,17 +3,27 @@
 * {
   box-sizing: border-box;
 
-  --main-color-gray: #5F6366;
-  --main-color-dark-blue: #4D6D9A;
-  --main-color-light-blue: #86B3D1;
-  --main-color-light-green: #99CED3;
-  --main-color-pink: #EDB5BF;  
+  --main-color-gray: #6e7376;
+  --main-color-dark-blue: #4d6e9b;/*#3a5692;*/
+  --main-color-light-blue: #729dbf;
+  --main-color-light-green: #99CED2;
+  --main-color-pink: #e8b2bd;  
 }
 
 body {
   margin: 2% 5%;
   padding: 0;
-  border: black solid 5px;
+  /* border: black solid 5px; */
+  /* background: linear-gradient(
+    to right,
+    var(--main-color-dark-blue) 0%,
+    var(--main-color-dark-blue) 48%,
+    var(--main-color-light-green) 48%,
+    var(--main-color-light-green) 53%,
+    var(--main-color-light-blue) 53%,
+    var(--main-color-light-blue) 100%
+  ); */
+  /* color: white; */
 }
 
   /* To render Google fonts*/

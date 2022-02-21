@@ -1,0 +1,124 @@
+.main-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 
+  grid-template-areas: 
+    "about about"
+    "education work";
+    gap: 10px 20px;
+  color: white;
+  font-family: "Adamina", sans-serif;
+}
+
+.about-me {
+  grid-area: about;
+  background-color: var(--main-color-light-green);
+  margin-top: 10px;
+  border-radius: 50px;
+}
+
+.about-me h2, .education h2, .work h2 {
+  text-align:center;
+}
+
+.about-me .photo-intro-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-me .photo-intro-container #profile-photo {
+
+}
+
+.about-me .photo-intro-container #self-intro p{
+  max-width: 65ch;
+  margin-top: 0;
+  padding: 0 5px;
+  font-size: 1em;
+}
+
+.education {
+  grid-area: education;
+  background-color: lightgray;
+  padding: 0 15px;
+  z-index: 0;
+  color: white;
+  border-radius: 50px;
+  min-height: 500px;
+}
+
+.education h2 {
+  /* background-color: var(--main-color-dark-blue); */
+  height: fit-content;
+}
+
+.school-block {
+  z-index: 1;
+  background-color: var(--main-color-dark-blue);
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+  /* border-bottom: var(--main-color-pink) solid 2px; */
+  margin-top: 25px;
+  padding: 0 10px;
+  border-radius: 15px;
+}
+
+.school-block:first-of-type {
+  margin-top: 0;
+}
+
+.school-block:last-child {
+  padding-bottom: 15px;
+}
+
+.school-title, .work-title{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.school-title .header {
+  margin: 0.5em 0;
+}
+
+.school-title .location, 
+.school-title .date,
+.work-title .location,
+.work-title .date {
+  font-size: 0.8em;
+  padding: 2%;
+}
+/* .gap {
+  background-color: var(--main-color-light-green);
+} */
+.school-content, .work-content{
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+}
+
+.school-content img {
+  width: 17px;
+  height: 17px;
+}
+.school-content > div, .work-content > div {
+  /* margin-top: 1.75px; */
+}
+
+
+
+.school-content ul{
+  margin-top: 0;
+}
+
+.work {
+  grid-area: work;
+  background-color: var(--main-color-light-blue);
+  padding: 0 15px;
+  z-index: 0;
+}
+
+.work-block {
+
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
