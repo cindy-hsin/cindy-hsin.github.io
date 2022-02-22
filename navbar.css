@@ -1,5 +1,5 @@
 .navbar {
-  border: black solid 2px;
+  /* border: black solid 2px; */
   background-color: var(--main-color-gray);
 
   display: flex;
@@ -31,6 +31,18 @@
   font-size: 2.5rem;
   font-family: "Lora", sans-serif;
   padding: 0 0.5rem;
+}
+
+.navbar #name:hover{
+  animation: wiggle 2s;
+}
+
+@keyframes wiggle {
+  0% {transform: rotate(8deg);}
+  25% {transform: rotate(-8deg);}
+  50% {transform: rotate(10deg);}
+  75% {transform: rotate(-3deg);}
+  100% {transform: rotate(0deg);}
 }
 
 .navbar .menulinks ul{
@@ -113,6 +125,7 @@
 
   .navbar .menulinks li {
     text-align: center;
+    width: 100%;
   }
 
   .navbar .menulinks li a {

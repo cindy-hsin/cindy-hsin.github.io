@@ -42,7 +42,14 @@
   width: 128px;
   height: 128px;
   margin-right: 10px;
+  transition: 0.5s;
 }
+.about-me .photo-intro-container #profile-photo:hover {
+  width: 150px;
+  height: 150px;
+}
+
+
 
 .about-me .photo-intro-container #self-intro p{
   max-width: 65ch;
@@ -213,6 +220,20 @@ Background color of Education
     margin-right: 5px;
   }
   
+  .about-me .photo-intro-container {
+    display:block;
+    float: left;
+  }
+
+  .about-me .photo-intro-container #profile-photo {
+    float: left;
+  }
+
+  .about-me .photo-intro-container #profile-photo:hover {
+    width: 150px;
+    height: 150px;
+    float: left;
+  }
 
   .school-title .header,
   .job-title .header{
@@ -222,4 +243,5 @@ Background color of Education
   .education, .work {
     padding: 5px;
   }
+
 }
