@@ -24,7 +24,7 @@
 .about-me .photo-intro-container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .about-me .photo-intro-container #profile-photo {
@@ -35,7 +35,7 @@
   max-width: 65ch;
   margin-top: 0;
   padding: 0 5px;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 .education {
@@ -51,7 +51,7 @@
 
 .education h2 {
   /* background-color: var(--main-color-dark-blue); */
-  height: fit-content;
+  /* height: fit-content; */
 }
 
 .school-block {
@@ -60,7 +60,7 @@
   box-shadow: inset 5px 5px 8px 1px rgb(150, 60, 102);/* rgba(0, 0, 255, .2);*/
   /* border-bottom: var(--main-color-pink) solid 2px; */
   margin-top: 25px;
-  padding: 0 5px 0 20px;
+  padding: 0 5px 0 15px;
   border-radius: 15px;
 }
 
@@ -79,8 +79,10 @@
   justify-content: space-between;
 }
 
-.school-title .header {
-  margin: 0.5em 0;
+.school-title .header,
+.work-title .header{
+  margin: 0.5rem 0;
+  font-size: 1.17rem;
   text-decoration: underline solid rgba(0, 0, 255, 0.7) 3px; /*var(--main-color-light-green)*/
 }
 
@@ -88,7 +90,7 @@
 .school-title .date,
 .work-title .location,
 .work-title .date {
-  font-size: 0.85em;
+  font-size: 0.85rem;
   font-style: italic;
   padding: 2%;
 }
@@ -98,7 +100,7 @@
 .school-content, .work-content{
   display: flex;
   flex-direction: column;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 .school-content img {
@@ -133,3 +135,20 @@ Gap between AboutMe,Education, Work
 Background color of Education
 
 */
+
+@media (max-width: 768px){
+  .school-block {
+    padding-right: 10px;
+  }
+
+  .education, .work {
+    padding: 10px;
+  }
+
+  .school-title .header,
+  .work-title .header{
+    font-size: 1.13rem;
+  }
+
+
+}
