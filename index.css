@@ -1,3 +1,11 @@
+.navbar .menulinks #home-link{
+  font-style:oblique;
+  font-weight: bolder;
+  color: var(--main-color-light-green);
+  /* color: rgb(255, 174, 0); */
+  text-decoration: underline;
+}
+
 .main-grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -18,8 +26,6 @@
   margin-top: 10px;
   border-radius: 3vw;
 }
-
-
 
 .about-me h2, .education h2, .work h2 {
   text-align:center;

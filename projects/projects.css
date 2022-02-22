@@ -1,0 +1,7 @@
+.navbar .menulinks #projects-link{
+  font-style:oblique;
+  font-weight: bolder;
+  color: var(--main-color-light-green);
+  /* color: rgb(255, 174, 0); */
+  text-decoration: underline;
+}
