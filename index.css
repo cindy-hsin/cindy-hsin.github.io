@@ -20,6 +20,7 @@
   top: 10px;
 }
 
+
 .about-me {
   grid-area: about;
   background-color: var(--main-color-light-green);
@@ -85,13 +86,13 @@
   box-shadow: inset 5px 5px 8px 1px rgb(150, 60, 102);/* rgba(0, 0, 255, .2);*/
   /* border-bottom: var(--main-color-pink) solid 2px; */
   margin-top: 25px;
-  padding: 12px 5px 0 15px;
+  padding: 10px 5px 0 10px;
   border-radius: 5%;
 }
 
 .job-block {
   box-shadow: inset 5px 5px 8px 1px rgba(0, 0, 255, 0.5);
-  padding: 12px 5px 8px 15px;
+  padding: 15px 5px 8px 10px;
 }
 
 .school-block:first-of-type,
@@ -180,13 +181,13 @@ Background color of Education
     gap: 15px 10px;
    }
 
-  .school-block .job-block {
-    padding-right: 5px;
-  }
-
   .education, .work {
     padding: 10px;
     border-radius: 3vw;
+  }
+
+  .school-block .job-block {
+    padding: 12px 3px 8px 10px;
   }
 
   .school-title .header,
@@ -204,16 +205,19 @@ Background color of Education
 @media (max-width: 460px){
  .main-grid-container {
    grid-template-columns: 1.2fr 1fr;
-   gap: 15px 10px;
+   gap: 10px 0;
   }
 
+  .main-grid-container > * {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
 
   .school-title .header,
   .job-title .header{
     font-size: 1.1rem;
   }
-
-
 
   .education, .work {
     padding: 5px;
