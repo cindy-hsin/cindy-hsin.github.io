@@ -17,7 +17,6 @@
   background-color: var(--main-color-light-green);
   margin-top: 10px;
   border-radius: 3vw;
-  
 }
 
 
@@ -43,6 +42,10 @@
   margin-top: 0;
   padding: 0 5px;
   font-size: 1rem;
+}
+
+.about-me .photo-intro-container #self-intro p:first-of-type{
+  font-weight: bolder;
 }
 
 .education {
@@ -122,6 +125,7 @@
   font-size: 0.85rem;
   font-style: italic;
   padding: 2%;
+  text-align: end;
 }
 /* .gap {
   background-color: var(--main-color-light-green);
@@ -130,6 +134,11 @@
   display: flex;
   flex-direction: column;
   font-size: 1rem;
+}
+
+.school-content > div,
+.work-content > div {
+  margin-top: 2px;
 }
 
 .school-content img {
@@ -150,6 +159,8 @@
 
 
 
+
+
 /*To add::after
 Gap between AboutMe,Education, Work
 Background color of Education
@@ -157,8 +168,14 @@ Background color of Education
 */
 
 @media (max-width: 768px){
+
+  .main-grid-container {
+    grid-template-columns: 1.2fr 1fr;
+    gap: 15px 10px;
+   }
+
   .school-block .job-block {
-    padding-right: 10px;
+    padding-right: 5px;
   }
 
   .education, .work {
@@ -168,7 +185,7 @@ Background color of Education
 
   .school-title .header,
   .job-title .header{
-    font-size: 1.13rem;
+    font-size: 1.12rem;
   }
 
   .work-content {
@@ -176,4 +193,23 @@ Background color of Education
     top: 7%;
   }
 
+}
+
+@media (max-width: 460px){
+ .main-grid-container {
+   grid-template-columns: 1.2fr 1fr;
+   gap: 15px 10px;
+  }
+
+
+  .school-title .header,
+  .job-title .header{
+    font-size: 1.1rem;
+  }
+
+
+
+  .education, .work {
+    padding: 5px;
+  }
 }
