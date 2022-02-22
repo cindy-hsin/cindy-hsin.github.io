@@ -4,18 +4,23 @@
   grid-template-areas: 
     "about about"
     "education work";
-    gap: 10px 20px;
-  /* color: rgb(255, 255, 255); */
+  gap: 25px 25px;
+
   color: darkslategray;
   font-family: "Adamina", sans-serif;
+  position: relative;
+  top: 10px;
 }
 
 .about-me {
   grid-area: about;
   background-color: var(--main-color-light-green);
   margin-top: 10px;
-  border-radius: 50px;
+  border-radius: 3vw;
+  
 }
+
+
 
 .about-me h2, .education h2, .work h2 {
   text-align:center;
@@ -28,7 +33,9 @@
 }
 
 .about-me .photo-intro-container #profile-photo {
-
+  width: 128px;
+  height: 128px;
+  margin-right: 10px;
 }
 
 .about-me .photo-intro-container #self-intro p{
@@ -43,53 +50,75 @@
   /* background-color: lightgray; */
   /* background-color: rgb(240, 128, 128, 0.6); */
   background-color: var(--main-color-pink);
+}
+
+.work {
+  grid-area: work;
+  background-color: var(--main-color-light-blue);
+}
+
+.education, .work {
   padding: 0 15px;
   z-index: 0;
-  border-radius: 50px;
+  border-radius: 5%;
   min-height: 500px;
 }
-
-.education h2 {
-  /* background-color: var(--main-color-dark-blue); */
-  /* height: fit-content; */
+  
+.work-content {
+  position: relative;
+  top: 15%;
 }
 
-.school-block {
+
+.school-block, .job-block {
   z-index: 1;
   /* background-color: var(--main-color-dark-blue); */
   box-shadow: inset 5px 5px 8px 1px rgb(150, 60, 102);/* rgba(0, 0, 255, .2);*/
   /* border-bottom: var(--main-color-pink) solid 2px; */
   margin-top: 25px;
-  padding: 0 5px 0 15px;
-  border-radius: 15px;
+  padding: 12px 5px 0 15px;
+  border-radius: 5%;
 }
 
-.school-block:first-of-type {
+.job-block {
+  box-shadow: inset 5px 5px 8px 1px rgba(0, 0, 255, 0.5);
+  padding: 12px 5px 8px 15px;
+}
+
+.school-block:first-of-type,
+.job-block:first-of-type{
   margin-top: 0;
 }
 
-.school-block:last-child {
+.school-block:last-child,
+.job-block:last-child {
   padding-bottom: 15px;
   margin-bottom: 15px;
 }
 
-.school-title, .work-title{
+.school-title, .job-title{
   display:flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .school-title .header,
-.work-title .header{
+.job-title .header{
   margin: 0.5rem 0;
   font-size: 1.17rem;
-  text-decoration: underline solid rgba(0, 0, 255, 0.7) 3px; /*var(--main-color-light-green)*/
 }
+.school-title .header {
+  text-decoration: underline solid rgba(150, 60, 102) 3px;
+}
+.job-title .header{
+  text-decoration: underline solid rgba(0, 0, 255, 0.7) 3px;
+}
+
 
 .school-title .location, 
 .school-title .date,
-.work-title .location,
-.work-title .date {
+.job-title .location,
+.job-title .date {
   font-size: 0.85rem;
   font-style: italic;
   padding: 2%;
@@ -97,7 +126,7 @@
 /* .gap {
   background-color: var(--main-color-light-green);
 } */
-.school-content, .work-content{
+.school-content, .job-content{
   display: flex;
   flex-direction: column;
   font-size: 1rem;
@@ -107,27 +136,18 @@
   width: 17px;
   height: 17px;
 }
-.school-content > div, .work-content > div {
-  /* margin-top: 1.75px; */
-}
 
-
-
-.school-content ul{
+.school-content ul,
+.job-content ul{
   margin-top: 0;
 }
 
-.work {
-  grid-area: work;
-  background-color: var(--main-color-light-blue);
-  padding: 0 15px;
-  z-index: 0;
-}
 
-.work-block {
 
-  box-shadow: inset 15px 0px 0px 0px rgba(0, 0, 255, 0.2);
-}
+
+
+
+
 
 
 /*To add::after
@@ -137,18 +157,23 @@ Background color of Education
 */
 
 @media (max-width: 768px){
-  .school-block {
+  .school-block .job-block {
     padding-right: 10px;
   }
 
   .education, .work {
     padding: 10px;
+    border-radius: 3vw;
   }
 
   .school-title .header,
-  .work-title .header{
+  .job-title .header{
     font-size: 1.13rem;
   }
 
+  .work-content {
+    position: relative;
+    top: 7%;
+  }
 
 }
