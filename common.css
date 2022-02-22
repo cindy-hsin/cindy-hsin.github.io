@@ -31,13 +31,19 @@ body {
 }
 
 
+@media (min-width: 1440px) {
+  html, body {
+    margin: 0 5%;
+  }
+}
+
 @media (max-width: 768px) {
   html {
     font-size: 78%;
   }
 
   html, body {
-    margin: 0 2%;
+    margin: 0 3%;
   }
 }
 
