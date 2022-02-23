@@ -15,11 +15,11 @@
   gap: 25px 25px;
 
   color: darkslategray;
-  font-family: "Adamina", sans-serif;
+  font-family: 'Playfiar Display', serif;/*'Lora',serif;*/ /*'Playfair Display', serif;*/ /*'PT Serif', serif;*//*"Adamina", serif;*/
   position: relative;
   top: 10px;
 }
-
+ 
 
 .about-me {
   grid-area: about;
@@ -30,6 +30,8 @@
 
 .about-me h2, .education h2, .work h2 {
   text-align: center;
+  font-size: 1.8rem;
+
 }
 
 .about-me .photo-intro-container {
@@ -55,11 +57,11 @@
   max-width: 65ch;
   margin-top: 0;
   padding: 0 5px;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .about-me .photo-intro-container #self-intro p:first-of-type{
-  font-weight: bolder;
+  font-weight: 900;
 }
 
 .education {
@@ -122,7 +124,7 @@
 .school-title .header,
 .job-title .header{
   margin: 0.5rem 0;
-  font-size: 1.17rem;
+  font-size: 1.3rem;
 }
 .school-title .header {
   text-decoration: underline solid rgba(150, 60, 102) 3px;
@@ -136,7 +138,7 @@
 .school-title .date,
 .job-title .location,
 .job-title .date {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-style: italic;
   padding: 2%;
   text-align: end;
@@ -147,17 +149,26 @@
 .school-content, .job-content{
   display: flex;
   flex-direction: column;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .school-content > div,
-.work-content > div {
+.job-content > div {
   margin-top: 2px;
 }
 
-.school-content img {
-  width: 17px;
-  height: 17px;
+.school-content img,
+.job-content img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.3rem;
+  position: relative;
+  top: 0.3rem;
+}
+
+.school-content .bold,
+.job-content .bold {
+  font-weight: 900;
 }
 
 .school-content ul,
@@ -199,7 +210,7 @@ Background color of Education
 
   .school-title .header,
   .job-title .header{
-    font-size: 1.12rem;
+    font-size: 1.2rem;
   }
 
   .work-content {
@@ -237,7 +248,7 @@ Background color of Education
 
   .school-title .header,
   .job-title .header{
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 
   .education, .work {

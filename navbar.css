@@ -28,8 +28,8 @@
   color: var(--main-color-light-green);
   text-decoration: none;
 
-  font-size: 2.5rem;
-  font-family: "Lora", sans-serif;
+  font-size: 3rem;
+  font-family: 'Parisienne', cursive;
   padding: 0 0.5rem;
 }
 
@@ -61,7 +61,7 @@
   color: white;
   padding: 1rem 1.5rem;
   font-size: 1.25rem;
-  font-family: "Adamina", sans-serif;
+  font-family: "Adamina", serif;
 
   display: block;
 }
