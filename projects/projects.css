@@ -12,7 +12,6 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   color: darkslategray;
-  font-family: "Adamina", serif;
   position: relative;
   top: 20px;
 
@@ -23,7 +22,7 @@
 
 .project-block{
   /* min-width: 40ch; */
-  max-width: 50ch;
+  max-width: 70ch;
   /* border: black solid 2px; */
   padding: 0 15px 0 5px;
 
@@ -56,9 +55,32 @@
   margin-left: 10px;
 }
 
-@media (max-width: 768px) {
+.project-block li {
+  font-size: 1.15rem;
+}
+
+
+
+@media (max-width: 1450px) {
+  .project-block {
+    max-width: 65ch;
+  }
+}
+
+@media (max-width: 1270px) {
   .project-block {
     max-width: 60ch;
   }
+}
 
+@media (max-width: 1130px) {
+  .project-block {
+    max-width: 70ch;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-block {
+    max-width: 70ch;
+  }
 }
