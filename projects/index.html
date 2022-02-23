@@ -36,7 +36,7 @@
       <ul>
         <li><a href="../index.html" id="home-link">Home</a></li>
         <!-- Home: About(Brief Intro), Education, Work Experience     -->
-        <li><a href="projects/index.html" id="projects-link">Projects</a></li>
+        <li><a href="./index.html" id="projects-link">Projects</a></li>
         <li><a href="../contact/index.html" id="contact-link">Contact</a></li>
         <li><a href="../hobbies/index.html" id="hobbies-link">Hobbies</a></li>
       </ul>
@@ -45,28 +45,55 @@
 
 
 
-  <div class="grid">
-      <section id="about-me">
-        <h2>Project1</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolor, enim provident possimus pariatur fugit officia cum in doloremque ipsum? Vitae autem placeat officia omnis similique amet nihil eos vero tempore provident laboriosam dicta eaque quia, cumque totam facilis consequatur. Illo commodi deserunt esse, omnis porro quibusdam natus debitis culpa.</p>
+  <div class="main-flex-container">
+      <section class="project-block" id="othello-game">
+        <div class="title-container">
+          <h2 class="title">Othello Board Game</h2>
+          <div class="repo-link-block">
+            <span>link:</span>
+            <a href="https://github.com/cindy-hsin/OthelloGame">
+              <img class="github-icon" src="../images/github.png">
+            </a>
+          </div>
+         
+        </div>
+        <ul>
+          <li>Developed an Othello game in Python that allows human players to play against computer opponent.</li>
+          <li>Implemented DFS algorithm to validate player’s moves; applied greedy algorithm and corner-edge strategy to optimize computer’s moves, reaching a winning rate of 80%.</li>
+          <li>Created GUI that enables human player to place disc with mouse click, displays real-time chess board, presents and records game scores with Processing and Java Swing.</li>
+          <li>Conducted thorough unit test with Pytest module to ensure proper game logic.</li>
+        </ul>
       </section>
 
-      <section id="education">
-        <h2>Project2</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tempora dicta placeat adipisci voluptate nemo consequuntur veritatis vero. Rem quis, eaque, qui facilis fugiat ea ab voluptas repellat velit quia iste ut illo? Officiis veniam laudantium provident saepe asperiores delectus ut repudiandae quibusdam iusto assumenda, sapiente quae optio adipisci nobis, aspernatur sunt mollitia! Saepe a maiores quaerat quam id neque quidem blanditiis atque soluta, nam nemo ipsum, accusamus tempora est perferendis. Laudantium neque quas cum molestias vero adipisci consectetur quo iusto nostrum sequi, animi obcaecati explicabo pariatur. Aut iure, animi nulla eaque delectus ducimus deserunt unde molestiae, neque harum tempora.</p>
+      <section class="project-block" id="task-mgmt-app">
+
+        <div class="title-container">
+          <h2 class="title">Task Management App</h2>
+          <div class="repo-link-block">
+            <span>link:</span>
+            <a href="https://github.com/cindy-hsin/TaskManagementApp">
+              <img class="github-icon" src="../images/github.png">
+            </a>
+          </div>
+        </div>
+
+        <ul>
+          <li>Developed a CLI application with storage to local CSV file that allows user to efficiently manage(i.e. adding, marking complete, sorting and filtering) daily tasks.</li>
+          <li>Followed SOLID principle, MVC architecture in Java and applied designed patterns to ensure the modularity, testability, and extensibility of the app.</li>
+          <li>Implemented an independent command-line parser that allows flexible user inputs and provides usage examples and error messages for users.</li>
+          <li>Built the controller part of MVC using command pattern and priority queue data structure which easily manages the execution logic of command-line input operations.</li>
+          <li>Collaborated on Git for version control; conducted testing with Junit that achieved >70 % code coverage.</li>
+        </ul>
       </section>
 
-      <section id="work-experience">
-        <h2>Project3</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ratione laboriosam laborum sed soluta cum. Dignissimos nobis fugit soluta blanditiis asperiores, ab ut quae provident. Ipsa modi eum sint quod illo ea temporibus itaque autem porro assumenda veritatis deleniti, hic sit voluptatum odio eveniet soluta? Voluptatem quisquam ducimus aut incidunt optio veniam aliquam sunt libero sed animi, assumenda fugiat nesciunt obcaecati! Perferendis reprehenderit, molestiae, similique, numquam voluptas voluptate corrupti vero rerum sit nostrum nam nesciunt autem inventore ab dolore incidunt totam recusandae officiis repudiandae placeat possimus? Deserunt eligendi, non voluptatem quia harum nam hic, cumque omnis saepe nostrum, sit dolore?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ratione laboriosam laborum sed soluta cum. Dignissimos nobis fugit soluta blanditiis asperiores, ab ut quae provident. Ipsa modi eum sint quod illo ea temporibus itaque autem porro assumenda veritatis deleniti, hic sit voluptatum odio eveniet soluta? Voluptatem quisquam ducimus aut incidunt optio veniam aliquam sunt libero sed animi, assumenda fugiat nesciunt obcaecati! Perferendis reprehenderit, molestiae, similique, numquam voluptas voluptate corrupti vero rerum sit nostrum nam nesciunt autem inventore ab dolore incidunt totam recusandae officiis repudiandae placeat possimus? Deserunt eligendi, non voluptatem quia harum nam hic, cumque omnis saepe nostrum, sit dolore?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ratione laboriosam laborum sed soluta cum. Dignissimos nobis fugit soluta blanditiis asperiores, ab ut quae provident. Ipsa modi eum sint quod illo ea temporibus itaque autem porro assumenda veritatis deleniti, hic sit voluptatum odio eveniet soluta? Voluptatem quisquam ducimus aut incidunt optio veniam aliquam sunt libero sed animi, assumenda fugiat nesciunt obcaecati! Perferendis reprehenderit, molestiae, similique, numquam voluptas voluptate corrupti vero rerum sit nostrum nam nesciunt autem inventore ab dolore incidunt totam recusandae officiis repudiandae placeat possimus? Deserunt eligendi, non voluptatem quia harum nam hic, cumque omnis saepe nostrum, sit dolore?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ratione laboriosam laborum sed soluta cum. Dignissimos nobis fugit soluta blanditiis asperiores, ab ut quae provident. Ipsa modi eum sint quod illo ea temporibus itaque autem porro assumenda veritatis deleniti, hic sit voluptatum odio eveniet soluta? Voluptatem quisquam ducimus aut incidunt optio veniam aliquam sunt libero sed animi, assumenda fugiat nesciunt obcaecati! Perferendis reprehenderit, molestiae, similique, numquam voluptas voluptate corrupti vero rerum sit nostrum nam nesciunt autem inventore ab dolore incidunt totam recusandae officiis repudiandae placeat possimus? Deserunt eligendi, non voluptatem quia harum nam hic, cumque omnis saepe nostrum, sit dolore?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ratione laboriosam laborum sed soluta cum. Dignissimos nobis fugit soluta blanditiis asperiores, ab ut quae provident. Ipsa modi eum sint quod illo ea temporibus itaque autem porro assumenda veritatis deleniti, hic sit voluptatum odio eveniet soluta? Voluptatem quisquam ducimus aut incidunt optio veniam aliquam sunt libero sed animi, assumenda fugiat nesciunt obcaecati! Perferendis reprehenderit, molestiae, similique, numquam voluptas voluptate corrupti vero rerum sit nostrum nam nesciunt autem inventore ab dolore incidunt totam recusandae officiis repudiandae placeat possimus? Deserunt eligendi, non voluptatem quia harum nam hic, cumque omnis saepe nostrum, sit dolore?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ratione laboriosam laborum sed soluta cum. Dignissimos nobis fugit soluta blanditiis asperiores, ab ut quae provident. Ipsa modi eum sint quod illo ea temporibus itaque autem porro assumenda veritatis deleniti, hic sit voluptatum odio eveniet soluta? Voluptatem quisquam ducimus aut incidunt optio veniam aliquam sunt libero sed animi, assumenda fugiat nesciunt obcaecati! Perferendis reprehenderit, molestiae, similique, numquam voluptas voluptate corrupti vero rerum sit nostrum nam nesciunt autem inventore ab dolore incidunt totam recusandae officiis repudiandae placeat possimus? Deserunt eligendi, non voluptatem quia harum nam hic, cumque omnis saepe nostrum, sit dolore?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ratione laboriosam laborum sed soluta cum. Dignissimos nobis fugit soluta blanditiis asperiores, ab ut quae provident. Ipsa modi eum sint quod illo ea temporibus itaque autem porro assumenda veritatis deleniti, hic sit voluptatum odio eveniet soluta? Voluptatem quisquam ducimus aut incidunt optio veniam aliquam sunt libero sed animi, assumenda fugiat nesciunt obcaecati! Perferendis reprehenderit, molestiae, similique, numquam voluptas voluptate corrupti vero rerum sit nostrum nam nesciunt autem inventore ab dolore incidunt totam recusandae officiis repudiandae placeat possimus? Deserunt eligendi, non voluptatem quia harum nam hic, cumque omnis saepe nostrum, sit dolore?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ratione laboriosam laborum sed soluta cum. Dignissimos nobis fugit soluta blanditiis asperiores, ab ut quae provident. Ipsa modi eum sint quod illo ea temporibus itaque autem porro assumenda veritatis deleniti, hic sit voluptatum odio eveniet soluta? Voluptatem quisquam ducimus aut incidunt optio veniam aliquam sunt libero sed animi, assumenda fugiat nesciunt obcaecati! Perferendis reprehenderit, molestiae, similique, numquam voluptas voluptate corrupti vero rerum sit nostrum nam nesciunt autem inventore ab dolore incidunt totam recusandae officiis repudiandae placeat possimus? Deserunt eligendi, non voluptatem quia harum nam hic, cumque omnis saepe nostrum, sit dolore?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ratione laboriosam laborum sed soluta cum. Dignissimos nobis fugit soluta blanditiis asperiores, ab ut quae provident. Ipsa modi eum sint quod illo ea temporibus itaque autem porro assumenda veritatis deleniti, hic sit voluptatum odio eveniet soluta? Voluptatem quisquam ducimus aut incidunt optio veniam aliquam sunt libero sed animi, assumenda fugiat nesciunt obcaecati! Perferendis reprehenderit, molestiae, similique, numquam voluptas voluptate corrupti vero rerum sit nostrum nam nesciunt autem inventore ab dolore incidunt totam recusandae officiis repudiandae placeat possimus? Deserunt eligendi, non voluptatem quia harum nam hic, cumque omnis saepe nostrum, sit dolore?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ratione laboriosam laborum sed soluta cum. Dignissimos nobis fugit soluta blanditiis asperiores, ab ut quae provident. Ipsa modi eum sint quod illo ea temporibus itaque autem porro assumenda veritatis deleniti, hic sit voluptatum odio eveniet soluta? Voluptatem quisquam ducimus aut incidunt optio veniam aliquam sunt libero sed animi, assumenda fugiat nesciunt obcaecati! Perferendis reprehenderit, molestiae, similique, numquam voluptas voluptate corrupti vero rerum sit nostrum nam nesciunt autem inventore ab dolore incidunt totam recusandae officiis repudiandae placeat possimus? Deserunt eligendi, non voluptatem quia harum nam hic, cumque omnis saepe nostrum, sit dolore?</p>
+      <section class="project-block">
+        <h2 class="title">Project3</h2>
+        <ul>
+         <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, dignissimos consequuntur voluptatibus voluptas rem est!</li>
+         <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, iure quaerat sed inventore eligendi sint?</li>
+         <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque nihil aperiam odit in quo ad!</li>
+         <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque nihil aperiam odit in quo ad!</li>
+        </ul>      
       </section>
   
   </div>

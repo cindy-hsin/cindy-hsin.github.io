@@ -5,3 +5,60 @@
   /* color: rgb(255, 174, 0); */
   text-decoration: underline;
 }
+
+.main-flex-container {
+  display: flex;
+  /* gap: 15px 25px; */
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  color: darkslategray;
+  font-family: "Adamina", sans-serif;
+  position: relative;
+  top: 20px;
+
+  background: url("../images/rock2.jpg") repeat-y top/100%;
+  padding: 3% 2%;
+  border-radius: 3%;
+}
+
+.project-block{
+  /* min-width: 40ch; */
+  max-width: 50ch;
+  /* border: black solid 2px; */
+  padding: 0 15px 0 5px;
+
+  box-shadow: inset 10px 10px 20px 1px rgb(255,245,238);
+  background-color: rgb(245,245,245,0.2);
+  /* background-color: rgb(254,254,250,0.6); */
+  margin-bottom: 20px;
+  border-radius: 5%;
+
+}
+
+.project-block .title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-block .title {
+  padding-left: 10px;
+}
+
+.repo-link-block {
+  display: flex;
+  align-items: center;
+}
+
+.project-block .github-icon {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .project-block {
+    max-width: 60ch;
+  }
+
+}

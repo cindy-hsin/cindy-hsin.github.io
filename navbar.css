@@ -101,7 +101,7 @@
 
   .navbar .menulinks{
     display: none;
-    width: 100%;
+    width: 100vw;
   }
 
   #toggle-button:hover {
@@ -131,7 +131,5 @@
   .navbar .menulinks li a {
     padding: .5rem 1rem;
   }
-
-
 
 }
