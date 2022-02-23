@@ -18,7 +18,7 @@
 
   background: url("../images/rock2.jpg") repeat-y top/100%;
   padding: 3% 2%;
-  border-radius: 3%;
+  /* border-radius: 3%; */
 }
 
 .project-block{
