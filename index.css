@@ -23,7 +23,7 @@
 
 .about-me {
   grid-area: about;
-  background-color: var(--main-color-light-green);
+  background-color: rgb(153, 206, 210, 0.5);
   margin-top: 10px;
   border-radius: 3vw;
 }
@@ -90,7 +90,7 @@
 .school-block, .job-block {
   z-index: 1;
   /* background-color: var(--main-color-dark-blue); */
-  box-shadow: inset 5px 5px 8px 1px rgb(150, 60, 102);/* rgba(0, 0, 255, .2);*/
+  box-shadow: inset 3px 3px 18px 1px rgb(150, 60, 102, 0.3);/* rgba(0, 0, 255, .2);*/
   /* border-bottom: var(--main-color-pink) solid 2px; */
   margin-top: 25px;
   padding: 10px 5px 0 10px;
@@ -98,7 +98,7 @@
 }
 
 .job-block {
-  box-shadow: inset 5px 5px 8px 1px rgba(0, 0, 255, 0.5);
+  box-shadow: inset 3px 3px 18px 1px rgba(0, 0, 255, 0.2);
   padding: 15px 5px 8px 10px;
 }
 
