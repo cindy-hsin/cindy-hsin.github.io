@@ -5,3 +5,18 @@
   /* color: rgb(255, 174, 0); */
   text-decoration: underline;
 }
+
+.main-flex-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+
+
+.video-container {
+  /*16:9 ratio*/
+  width: 500px;
+  height: 281px;
+}
