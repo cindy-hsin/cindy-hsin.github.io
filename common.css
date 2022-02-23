@@ -1,11 +1,9 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Adamina&family=Lora:ital@1&display=swap'); */
-
 * {
   box-sizing: border-box;
 
   --main-color-gray: #6e7376;
-  --main-color-dark-blue:rgba(76, 107, 154, 0.6) /*#4d6e9b*/;/*#3a5692;*/
-  --main-color-light-blue: rgb(204,204,255, 0.7);/*rgb(114, 157, 191, 70%);*/
+  --main-color-dark-blue:rgba(76, 107, 154, 0.6) 
+  --main-color-light-blue: rgb(204,204,255, 0.7);
   --main-color-light-green: #99CED2;
   --main-color-pink: rgb(240, 128, 128, 0.4) /*#e8b2bd; */
 }

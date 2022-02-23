@@ -2,7 +2,6 @@
   font-style:oblique;
   font-weight: bolder;
   color: var(--main-color-light-green);
-  /* color: rgb(255, 174, 0); */
   text-decoration: underline;
 }
 
@@ -65,8 +64,6 @@
 
 .education {
   grid-area: education;
-  /* background-color: lightgray; */
-  /* background-color: rgb(240, 128, 128, 0.6); */
   background-color: var(--main-color-pink);
 }
 
@@ -90,9 +87,7 @@
 
 .school-block, .job-block {
   z-index: 1;
-  /* background-color: var(--main-color-dark-blue); */
-  box-shadow: inset 3px 3px 18px 1px rgb(150, 60, 102, 0.3);/* rgba(0, 0, 255, .2);*/
-  /* border-bottom: var(--main-color-pink) solid 2px; */
+  box-shadow: inset 3px 3px 18px 1px rgb(150, 60, 102, 0.3);
   margin-top: 25px;
   padding: 10px 5px 0 10px;
   border-radius: 5%;
@@ -142,9 +137,7 @@
   padding: 2%;
   text-align: end;
 }
-/* .gap {
-  background-color: var(--main-color-light-green);
-} */
+
 .school-content, .job-content{
   display: flex;
   flex-direction: column;
@@ -175,21 +168,6 @@
   margin-top: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-/*To add::after
-Gap between AboutMe,Education, Work
-Background color of Education
-
-*/
 
 @media (max-width: 768px){
 
