@@ -6,17 +6,82 @@
   text-decoration: underline;
 }
 
+.background {
+  width: 100%;
+  background-color: rgb(153, 206, 210, 0.5);
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+}
+
 .main-flex-container {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  align-items: center;
+
+  align-items: stretch;
+  width: 60vw;
+
+  color: darkslategray;
+}
+
+.intro, .caption {
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.intro {
+  margin-top: 4%;
+}
+.caption {
+  margin-top: 6%;
+}
+
+.hint {
+  text-align: center;
+  font-size: 1.25rem;
+  padding-top: 2%;
+  color:rgba(150, 60, 102);
+  
+}
+
+.acapella-image {
+  margin-top: 2%;
+  height: 466px;
+  background-image: url("../images/rsz_acapella.jpg");
+}
+
+.link {
+  text-decoration: none;
+  color: darkslategray;
+  font-style: italic;
+  font-size: 1.25rem;
+}
+.cover-list{
+  margin-top: 0;
+  text-align: center;
+  align-self: center;
 }
 
 
 
-.video-container {
-  /*16:9 ratio*/
-  width: 500px;
-  height: 281px;
+
+@media (max-width: 1220px) {
+  .main-flex-container {
+    width: 80vw;
+  }
 }
+
+
+@media (max-width: 460px) {
+  .image-container {
+    overflow: hidden;
+  }
+
+  .acapella-image {
+    height: 400px;
+    margin-top: -100px;
+    margin-left: -130px;
+    object-fit: cover;
+  }
+}
+
