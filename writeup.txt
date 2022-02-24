@@ -1,4 +1,3 @@
-# cindy-hsin.github.io
 ## Most challenging piece of this assignment:
 Mobile friendliness, especially when involving embedded images/icons. I spent lots of time adjusting the sizing and position of images, and ended up using different techniques for different situations. (See the next question.) In the later stage of development, I sort of turned to "mobile-first" desgin, to avoid spending too much time on re-arranging contents. Overall, I find it a bit challenging to work with pure HTML and CSS, especially when trying to develop a mobile friendly website. I hope in the future, we can learn to use seom 3rd party frameworks or libraries that can ease the pain.
 
