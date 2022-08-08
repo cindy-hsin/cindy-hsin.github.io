@@ -39,14 +39,14 @@
 }
 
 .about-me .photo-intro-container #profile-photo {
-  width: 150px;
-  height: 170px;
+  width: 181px;
+  height: 192px;
   margin-right: 10px;
   transition: 0.5s;
 }
 .about-me .photo-intro-container #profile-photo:hover {
-  width: 160px;
-  height: 181px;
+  width: 181px;
+  height: 192px;
 }
 
 
